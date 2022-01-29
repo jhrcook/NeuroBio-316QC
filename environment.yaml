@@ -6,6 +6,7 @@ dependencies:
   - python=3.9.10
   - black
   - flake8
+  - ipywidgets
   - isort
   - jupyterlab
   - jupyterlab_code_formatter
