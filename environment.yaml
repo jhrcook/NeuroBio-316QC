@@ -1,0 +1,28 @@
+name: neuro316
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9.10
+  - black
+  - flake8
+  - isort
+  - jupyterlab
+  - jupyterlab_code_formatter
+  - jupyterlab-spellchecker
+  - matplotlib
+  - mamba
+  - mypy
+  - nbqa
+  - numpy
+  - pandas
+  - pip
+  - plotnine
+  - pretty_errors
+  - pydantic
+  - pyjanitor
+  - scikit-learn
+  - scikit-misc
+  - scipy
+  - seaborn
+  - watermark

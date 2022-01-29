@@ -198,6 +198,6 @@ cython_debug/
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,python,jupyternotebooks
 
-./books/
-./papers/
-./sessions/
+books/
+papers/
+sessions/
