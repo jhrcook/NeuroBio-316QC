@@ -1,0 +1,8 @@
+from: markdown
+to: pdf
+dpi: 300
+variables:
+  margin-left: '1in'
+  margin-right: '1in'
+  margin-top: '1in'
+  margin-bottom: '1in'
