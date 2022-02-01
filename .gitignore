@@ -226,6 +226,3 @@ cython_debug/
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode
 
 .vscode/
-books/
-papers/
-sessions/
