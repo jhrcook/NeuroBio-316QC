@@ -67,12 +67,12 @@ The prior distribution will pull the posterior towards itself by weighting the p
 The less variance in the prior, an indicator of the amount of prior knowledge, the more influential prior data will be on the posterior.
 With more observations, the likelihood becomes more influential on the posterior.
 With no data, the posterior is the same as the prior distribution.
-These dynamics can be viewed by comparing Figure \ref{fig:high-var} with a high variance prior $\Gamma(10, 1)$ and Figure \ref{fig:low-var} with a low variance prior $\Gamma(10, 20)$, holding the likelihood constant.
+These dynamics can be viewed by comparing Figure \ref{fig:high-var} with a high variance prior $\text{Gam}(10, 1)$ and Figure \ref{fig:low-var} with a low variance prior $\text{Gam}(10, 20)$, holding the likelihood constant.
 On the other hand, reducing the amount of data weakens the likelihood and the posterior appears very similar to the prior (Figure \ref{fig:low-like}).
 
-![MAP with a weak, high-variance prior of $\Gamma(10, 1)$.](02_exercise-1-writeup_assets/015_high-variance-prior.png){#fig:high-var width=50%}
+![MAP with a weak, high-variance prior of $\text{Gam}(10, 1)$.](02_exercise-1-writeup_assets/015_high-variance-prior.png){#fig:high-var width=50%}
 
-![MAP with a strong, low-variance prior of $\Gamma(10, 20)$.](02_exercise-1-writeup_assets/020_low-variance-prior.png){#fig:low-var width=50%}
+![MAP with a strong, low-variance prior of $\text{Gam}(10, 20)$.](02_exercise-1-writeup_assets/020_low-variance-prior.png){#fig:low-var width=50%}
 
 ![MAP with a weak likelihood by reducing the amount of observed data.](02_exercise-1-writeup_assets/025_low-likelihood.png){#fig:low-like width=50%}
 
