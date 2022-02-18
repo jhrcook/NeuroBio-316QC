@@ -138,7 +138,7 @@ ax.legend();
 
 
 
-![png](01_ProbNeuralModels_jhcook_files/01_ProbNeuralModels_jhcook_10_0.png)
+![png](01_ProbNeuralModels_Exercise1_jhcook_files/01_ProbNeuralModels_Exercise1_jhcook_10_0.png)
 
 
 
@@ -365,7 +365,7 @@ visualize_fits(spikes, i_neuron, fit1=gaussian_mu_ML, label1="Gaussian ML estima
 
 
 
-![png](01_ProbNeuralModels_jhcook_files/01_ProbNeuralModels_jhcook_24_0.png)
+![png](01_ProbNeuralModels_Exercise1_jhcook_files/01_ProbNeuralModels_Exercise1_jhcook_24_0.png)
 
 
 
@@ -418,7 +418,7 @@ visualize_fits(
 
 
 
-![png](01_ProbNeuralModels_jhcook_files/01_ProbNeuralModels_jhcook_26_0.png)
+![png](01_ProbNeuralModels_Exercise1_jhcook_files/01_ProbNeuralModels_Exercise1_jhcook_26_0.png)
 
 
 
@@ -707,7 +707,7 @@ ax.set(xlabel="Number of bins", ylabel="Poisson log likelihood");
 
 
 
-![png](01_ProbNeuralModels_jhcook_files/01_ProbNeuralModels_jhcook_37_0.png)
+![png](01_ProbNeuralModels_Exercise1_jhcook_files/01_ProbNeuralModels_Exercise1_jhcook_37_0.png)
 
 
 
@@ -870,7 +870,7 @@ visualize_fits(
 
 
 
-![png](01_ProbNeuralModels_jhcook_files/01_ProbNeuralModels_jhcook_46_0.png)
+![png](01_ProbNeuralModels_Exercise1_jhcook_files/01_ProbNeuralModels_Exercise1_jhcook_46_0.png)
 
 
 
@@ -1003,7 +1003,7 @@ def plot_prior_variance_effects(prior_variance: float, n_train_trials: int) -> N
     prior_mode = 4
     lambda_vec = np.arange(0.1, 20, 0.1)
 
-    beta = (prior_mode + np.sqrt(prior_mode ** 2 - 4 * prior_variance * -1)) / (
+    beta = (prior_mode + np.sqrt(prior_mode**2 - 4 * prior_variance * -1)) / (
         2 * prior_variance
     )
     alpha = prior_mode * beta + 1
@@ -1098,7 +1098,7 @@ fig.colorbar(im);
 
 
 
-![png](01_ProbNeuralModels_jhcook_files/01_ProbNeuralModels_jhcook_56_0.png)
+![png](01_ProbNeuralModels_Exercise1_jhcook_files/01_ProbNeuralModels_Exercise1_jhcook_56_0.png)
 
 
 
@@ -1133,7 +1133,7 @@ test_log_likelihood = np.zeros((len(variance_options),))
 for i_variance, prior_variance in enumerate(variance_options):
 
     # Convert mode and variance to alpha/beta
-    beta = (prior_mode + np.sqrt(prior_mode ** 2 - 4 * prior_variance * -1)) / (
+    beta = (prior_mode + np.sqrt(prior_mode**2 - 4 * prior_variance * -1)) / (
         2 * prior_variance
     )
     alpha = prior_mode * beta + 1
@@ -1174,7 +1174,7 @@ ax.set(
 
 
 
-![png](01_ProbNeuralModels_jhcook_files/01_ProbNeuralModels_jhcook_58_0.png)
+![png](01_ProbNeuralModels_Exercise1_jhcook_files/01_ProbNeuralModels_Exercise1_jhcook_58_0.png)
 
 
 
@@ -1218,7 +1218,7 @@ def plot_other_neurons(i_neuron: int, n_train_trials: int) -> None:
     poisson_lambda_MAP = {}
     for i_variance, prior_variance in enumerate(variance_options):
 
-        beta = (prior_mode + np.sqrt(prior_mode ** 2 - 4 * prior_variance * -1)) / (
+        beta = (prior_mode + np.sqrt(prior_mode**2 - 4 * prior_variance * -1)) / (
             2 * prior_variance
         )
         alpha = prior_mode * beta + 1
@@ -1414,7 +1414,7 @@ def plot_best_priors(i_neuron: int) -> None:
     for i_variance, prior_variance in enumerate(variance_options):
 
         for i_mode, prior_mode in enumerate(mode_options):
-            beta = (prior_mode + np.sqrt(prior_mode ** 2 - 4 * prior_variance * -1)) / (
+            beta = (prior_mode + np.sqrt(prior_mode**2 - 4 * prior_variance * -1)) / (
                 2 * prior_variance
             )
             alpha = prior_mode * beta + 1
