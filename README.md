@@ -10,7 +10,7 @@ This repository contains my notes for the course **NeuroBio 316QC: Probabilistic
 
 The topics for the sessions of the course are outlined below:
 
-![Course session outline.](session-outline.pdf)
+![Course session outline.](session-outline.jpg)
 
 ---
 
